@@ -50,11 +50,17 @@ int main() {
 
 	ptrarrex();
 
-	dynamicEx();
+	//dynamicEx();
 
-	stringEx();
+	//stringEx();
 
-	stringEx2();
+	//stringEx2();
+
+	structEx();
+
+	structEx2();
+
+	structEx3();
 
 	return(0);
 }
