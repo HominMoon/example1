@@ -81,10 +81,18 @@ void structEx3() {
 	cout << "각 멤버변수의 크기: " << sizeof(size.a) << " " << sizeof(size.b) <<
 		" " << sizeof(size.c) << endl;
 
-	cout << "구조체 'size'의 크기: " << sizeof(size);
+	cout << "구조체 'size'의 크기: " << sizeof(size) <<endl << endl;
 
 	//위는 합이 13 아래는 16이 나온다... 왜?
 	//구조체를 메모리에 할당할 때 컴파일러는 속도향상을 위해
 	// '바이트패딩'을 한다. -> 가장 큰 멤버변수를 기준으로 멤버변수의 메모리 크기를 맞춘다.
 
+}
+
+int recursiveEx(int n) { //재귀함수의 동작
+
+	if (n == 1)
+		return 1;
+
+	return n+recursiveEx(n-1);
 }

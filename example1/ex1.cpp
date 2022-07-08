@@ -5,7 +5,7 @@
 
 using namespace std;
 
-int main() {
+int main(int argc, char* argv[]) {
 	int age;
 	float k = 0;
 
@@ -61,6 +61,8 @@ int main() {
 	structEx2();
 
 	structEx3();
+
+	cout << "1에서 10까지의 합: " << recursiveEx(10) << endl << endl;
 
 	return(0);
 }
